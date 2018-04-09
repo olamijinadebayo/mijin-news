@@ -17,4 +17,5 @@ def source(source_id):
     view function that returns the sources
     '''
     title = f"{source_id} page"
+    articles = get_articles(source_id)
     return render_template('source.html',title = title,articles =articles)
