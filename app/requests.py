@@ -23,16 +23,7 @@ def get_sources():
     return sources_results
 
 def process_sources(source_list):
-
-	'''
-	Function  that processes the sources result and transform them to a list of Objects
-	Args:
-	sources_results: A list of dictionaries that contain sources details
-	Returns :
-	sources_list: A list of sources objects
-	'''
     source_results = []
-
     for source_item in source_list:
         id = source_item.get('id')
         name = sourrce_item.get('name')

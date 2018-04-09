@@ -1,5 +1,6 @@
+from flask_script import Server,Manager,Shell
+
 from app import create_app
-from flask_script import Manager,Server
 
 #Flask-Script is a command line parser for creating startup configurations.
 # Manager initializes the flask script extension
@@ -12,7 +13,7 @@ app = create_app('development')
 manager = Manager(app)
 manager.add_command('server',Server)
 
-@manager.add_command
+@manager.command
 def test():
     '''
     this will rin unittests
