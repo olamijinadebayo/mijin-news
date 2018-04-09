@@ -3,7 +3,7 @@ from app.models import Article
 
 class ArticleTest(object):
     """test to confirm the behaviour of the article class."""
-    def setup(self):
+    def setUp(self):
         self.new_article = Article('the-next-web','PlayStation\'s $30 PS4 gamepad for kids is totally adorable', 'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/10/PS4-Mini-gamepad-social.jpg', 'Sony\'s teamed up with Hori on its new $30 Mini Wired Gamepad, which is designed for younger PS4 players with smaller hands.', 'https://thenextweb.com/gaming/2017/10/19/playstations-30-ps4-gamepad-for-kids-is-totally-adorable/', '2017-10-19T13:00:00Z')
 
     def test_instance(self):
