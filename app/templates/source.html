@@ -17,15 +17,13 @@
     <title>{{ title }}</title>
 
     <div class="container">
-
-        <h2 class="article-header">Articles</h2>
-
+        <h2 class="article-header">Articles</h2><hr/>
         <div class="row source-row">
+          <ul class="list-unstyled sources-list">
 
-            <ul class="list-unstyled sources-list">
-                {{ macro.displayArticleList(articles) }}
-            </ul>
+              {{ macro.displayArticleList(articles) }}
 
+          </ul>
         </div>
 
     </div>

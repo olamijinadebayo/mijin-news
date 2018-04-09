@@ -60,4 +60,8 @@ def process_articles(article_list):
         urlToArticle = article_item.get('url')
         publishedAt = article_item.get('publishedAt')
 
+        article_object = Article(source,title,urlToImage,description,urlToArticle,publishedAt)
+
+        article_results.append(article_object)
+
     return article_results
