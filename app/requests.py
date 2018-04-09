@@ -26,7 +26,7 @@ def process_sources(source_list):
     source_results = []
     for source_item in source_list:
         id = source_item.get('id')
-        name = sourrce_item.get('name')
+        name = source_item.get('name')
         description = source_item.get('description')
 
         source_object = Source(id,name,description)
